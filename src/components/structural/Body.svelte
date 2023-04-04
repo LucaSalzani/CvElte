@@ -8,20 +8,23 @@
 			label: 'Contact',
 			details: [
 				{
-					subcategory: 'Say hi',
+					subcategory: 'About me',
 					contactDetails: [
 						{
-							isLink: true,
-							type: 'email',
-							text: 'luca.salzani@gmail.com',
-							icon: 'email',
+							text: '17. May 1993',
 						},
-						// {
-						// 	isLink: true,
-						// 	type: 'phone',
-						// 	text: '303-909-1445',
-						// 	icon: 'phone',
-						// },
+						{
+							text: 'DE: Mother tongue',
+							icon: 'language'
+						},
+						{
+							text: 'EN: Fluent',
+							icon: 'language'
+						},
+						{
+							text: 'FR/IT: Rudimentary',
+							icon: 'language'
+						},
 						{
 							text: 'Tann, ZH',
 							icon: 'location',
@@ -31,12 +34,12 @@
 				{
 					subcategory: 'Find me online',
 					contactDetails: [
-						// {
-						// 	isLink: true,
-						// 	type: 'web',
-						// 	url: 'bit.ly/2vJ0owX',
-						// 	text: 'theresamorelli.com',
-						// },
+						{
+							isLink: true,
+							type: 'email',
+							text: 'luca.salzani@gmail.com',
+							icon: 'email',
+						},
 						{
 							isLink: true,
 							type: 'web',
@@ -74,33 +77,18 @@
 				'Java',
 			],
 		},
-		// {
-		// 	type: 'simple-details',
-		// 	label: 'Projects',
-		// 	details: [
-		// 		{
-		// 			title: 'Hello Pizza Truck',
-		// 			url: 'http://bit.ly/2VXTVJ3',
-		// 			link: 'hellopizzatruck.com',
-		// 			description:
-		// 				'Static site for selling food truck. Built with Gatsby, React hooks, and Slick carousel.',
-		// 		},
-		// 		{
-		// 			title: 'Newsmash',
-		// 			url: 'http://bit.ly/2Ix2sKW',
-		// 			link: 'newsmashed.herokuapp.com',
-		// 			description:
-		// 				'Data visualization for the news. Integrated three external APIs with React/Redux app and PostgreSQL.',
-		// 		},
-		// 		{
-		// 			title: 'Svelte Resume',
-		// 			url: 'bit.ly/38E1FCO',
-		// 			link: 'bit.ly/svelte-resume',
-		// 			description:
-		// 				'Flexible and customizable PDF resume template built with Svelte.',
-		// 		},
-		// 	],
-		// },
+		{
+			type: 'aboutcv',
+			label: 'About this CV',
+			details: [
+				{
+					qrCode: 'qrcodecv.jpg',
+					url: 'https://cv-elte.vercel.app/',
+					description: 'Reading this CV on paper? Get the latest version online. Fully printable. Built with Svelte, deployed with Vercel.',
+					version: 'v0.1'
+				}
+			]
+		}
 	];
 	export const mainColumn = [
 		{
@@ -131,31 +119,6 @@
 						'Apprenticeship in coputer science with emphasis on system technology. Graduated with 5.2.',
 					],
 				},
-				// {
-				// 	title: 'Math Fellow, Americorps',
-				// 	subtitle: 'Denver Public Schools',
-				// 	dates: '2017 — 2018',
-				// 	location: 'Denver, CO',
-				// 	description: 'Middle school math intervention program',
-				// 	list: [
-				// 		'Improved academic outcomes for a diverse student population by creating and teaching lesson plans that included original worksheets and activities.',
-				// 		'Developed a positive motivation system to encourage on-task behavior, teamwork, and delaying of rewards.',
-				// 		'Launched and led HTML coding enrichment class with Galvanize students.',
-				// 		// • Taught small-group 6th grade math intervention, writing and delivering original lessons.
-				// 		// • Managed behavior and relationships with a positive motivation system, restorative conversations, and supplemental tutoring.
-				// 		// • Facilitated an elective with Galvanize where students learned HTML and built websites (deployed and hosted by Galvanize).
-				// 	],
-				// },
-				// {
-				// 	title: 'Technical Writer',
-				// 	subtitle: 'KBC Advanced Technologies',
-				// 	dates: '2014 — 2015',
-				// 	location: 'Denver, CO',
-				// 	description: 'Oil refinery operations manuals',
-				// 	list: [
-				// 		'Produced high quality training manuals that included written content and Visio drawings, synthesizing information from various sources.',
-				// 	],
-				// },
 			],
 		},
 		{
@@ -167,13 +130,14 @@
 					subtitle: 'Hochschule für Technik Rapperswil (today OST)',
 					dates: '09/2015 — 08/2018',
 					location: 'Rapperswil, SG',
-					// todo text
+					description: 'Bachelor thesis: "Stücklistenmanagement für Maschinen" - mark 6.0. Specialization Software Engineering and Application Design.',
 				},
 				{
-					title: 'Technical Vocational (Berufsmaturität)',
+					title: 'Technical Vocational (BM2)',
 					subtitle: 'Berufsbuildungszentrum Uster',
 					dates: '08/2012 — 06/2014',
 					location: 'Uster, ZH',
+					description: 'Part time after apprenticeship. Graduated with a mark of 4.9',
 				},
 			],
 		},

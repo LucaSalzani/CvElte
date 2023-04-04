@@ -15,6 +15,5 @@
 		margin: 0 var(--horizontal-space-between-columns);
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 	}
 </style>

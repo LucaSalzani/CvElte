@@ -9,6 +9,7 @@
 		github: 'fab fa-github',
 		linkedin: 'fab fa-linkedin-in',
 		blog: 'fa fa-pencil-alt',
+		language: 'fa fa-globe'
 	};
 	let linkIcon = fontAwesomeIconMap[icon] || defaultIcon;
 </script>
