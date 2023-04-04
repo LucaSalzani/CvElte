@@ -82,7 +82,7 @@
 			label: 'About this CV',
 			details: [
 				{
-					qrCode: 'qrcodecv.jpg',
+					qrCode: 'qr-code.png',
 					url: 'https://cv-elte.vercel.app/',
 					description: 'Reading this CV on paper? Get the latest version online. Fully printable. Built with Svelte, deployed with Vercel.',
 					version: 'v0.1'
