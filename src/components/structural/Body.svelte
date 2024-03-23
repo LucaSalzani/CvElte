@@ -5,10 +5,10 @@
   export const sideColumn = [
     {
       type: "contact",
-      label: "Contact",
+      label: "About me",
       details: [
         {
-          subcategory: "About me",
+          subcategory: "General",
           contactDetails: [
             {
               text: "17. May 1993"
