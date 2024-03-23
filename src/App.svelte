@@ -1,9 +1,9 @@
 <script>
-	import Header from './components/structural/Header.svelte';
-	import Body from './components/structural/Body.svelte';
+  import Header from "./components/structural/Header.svelte";
+  import Body from "./components/structural/Body.svelte";
 </script>
 
 <main>
-	<Header />
-	<Body />
+  <Header />
+  <Body />
 </main>
