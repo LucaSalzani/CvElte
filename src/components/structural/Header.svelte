@@ -1,9 +1,6 @@
 <script>
   import { _ } from "../../services/i18n";
   export const name = "Luca Salzani";
-  const summaryLines = [
-    "Versatile and pragmatic full stack developer with focus on .NET backend technologies. Fast learner with experience in a wide range of industries. Enthusiastic about DevOps and Quality Assurance.",
-  ];
 </script>
 
 <div id="header">
