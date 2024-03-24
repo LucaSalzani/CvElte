@@ -1,6 +1,9 @@
 <script>
+  import { _ } from "../../services/i18n";
   export let skill;
 </script>
+
+<div class="skill">{$_(skill)}</div>
 
 <style>
   .skill {
@@ -13,5 +16,3 @@
     font-weight: 400;
   }
 </style>
-
-<div class="skill">{skill}</div>

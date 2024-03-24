@@ -3,6 +3,12 @@
   export let sections;
 </script>
 
+<div id="side-column">
+  {#each sections as { label, details, type }}
+    <Section {label} {details} {type} />
+  {/each}
+</div>
+
 <style>
   #side-column {
     width: calc(100% - var(--main-column-width));
@@ -13,9 +19,3 @@
     justify-content: space-between;
   }
 </style>
-
-<div id="side-column">
-  {#each sections as { label, details, type }}
-    <Section {label} {details} {type} />
-  {/each}
-</div>

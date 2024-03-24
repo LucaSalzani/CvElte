@@ -25,6 +25,12 @@
   /* --more-centered: center; */
 }
 
+@media print {
+  :root {
+    --link-color: #000;
+  }
+}
+
 /* DEFAULT GLOBAL STYLES */
 
 html,

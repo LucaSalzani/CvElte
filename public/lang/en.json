@@ -1,0 +1,54 @@
+{
+  "header": "Versatile and pragmatic full stack developer with focus on .NET backend technologies. Fast learner with experience in a wide range of industries. Enthusiastic about DevOps and software quality.",
+  "side": {
+    "about": {
+      "title": "About me",
+      "general_title": "General",
+      "birthday": "17. May 1993",
+      "language_de": "DE: Mother tongue",
+      "language_en": "EN: Fluent",
+      "language_frit": "FR/IT: Rudimentary",
+      "location": "Tann, ZH",
+      "find_title": "Find me online"
+    },
+    "skills": {
+      "title": "Strengths",
+      "architecture": "Architecture"
+    },
+    "cv": {
+      "title": "About this CV",
+      "description": "Reading this CV on paper or PDF? Get the latest version online. Fully printable. Built with Svelte."
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "zuehlke": {
+      "title": "Expert Software Engineer",
+      "dates": "08/2018 — ongoing",
+      "description": "Bringing Software excellence to clients",
+      "details1": "Lead a developer team in a SAFe project setup in the banking industry (C#, Angular, MSSQL, Jenkins, Octopus)",
+      "details2": "Architecural lead and development of a webapp in a small two-people project for a health insurance company (Angular, GraphQL, Azure DevOps, Requirement Engineering)",
+      "details3": "Worked on a Human-Machine-Interface application in the machine industry (C#, WPF, PostgreSQL, TeamCity)",
+      "details4": "Developed a crucial internal platform for a bank (C#, Angular, Cypress, MSSQL, TeamCity, Octopus)"
+    },
+    "baumann": {
+      "title": "IT-Infrastructure Engineer",
+      "description": "Apprenticeship and infrastructure projects",
+      "details1": "Several assignments in different european countries",
+      "details2": "Took part and lead small and medium sized infrastructure projects like Windows Server migrations, VoIP and data backup.",
+      "details3": "Working for the internal Service Desk",
+      "details4": "Apprenticeship in computer science with emphasis on system technology. Graduated with 5.2."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "fh": {
+      "title": "Bachelor Computer Science",
+      "description": "Bachelor thesis: \"Stücklistenmanagement für Maschinen\" - mark 6.0. Specialization \"Software Engineering\" and \"Application Design\"."
+    },
+    "bm2": {
+      "title": "Technical Vocational (BM2)",
+      "description": "Part time after apprenticeship. Graduated with a mark of 4.9"
+    }
+  }
+}

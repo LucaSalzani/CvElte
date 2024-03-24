@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "../../services/i18n";
   import ContactItem from "./ContactItem.svelte";
   export let title;
   export let subtitle;
@@ -11,9 +12,26 @@
     type: "web",
     icon: icon,
     url: url,
-    text: link
+    text: link,
   };
 </script>
+
+<div class="simple-detail detail-container">
+  <div class="top">
+    <div class="title">{$_(title)}</div>
+    {#if subtitle}
+      <div class="subtitle">{subtitle}</div>
+    {/if}
+    {#if link}
+      <ContactItem {detail} />
+    {/if}
+  </div>
+  <div class="bottom">
+    {#if description}
+      <div class="description">{$_(description)}</div>
+    {/if}
+  </div>
+</div>
 
 <style>
   .top {
@@ -33,25 +51,4 @@
   .subtitle {
     margin-bottom: 4px;
   }
-
-  a {
-    font-size: 0.9em;
-  }
 </style>
-
-<div class="simple-detail detail-container">
-  <div class="top">
-    <div class="title">{title}</div>
-    {#if subtitle}
-      <div class="subtitle">{subtitle}</div>
-    {/if}
-    {#if link}
-      <ContactItem {detail} />
-    {/if}
-  </div>
-  <div class="bottom">
-    {#if description}
-      <div class="description">{description}</div>
-    {/if}
-  </div>
-</div>

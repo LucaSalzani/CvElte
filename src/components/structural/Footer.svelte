@@ -1,3 +1,11 @@
+<div id="footer">
+  <div class="branding">
+    MADE WITH
+    <i class="fas fa-heart" />
+    <a href="http://bit.ly/38E1FCO">SVELTE RESUME</a>
+  </div>
+</div>
+
 <style>
   #footer {
     position: absolute;
@@ -21,11 +29,3 @@
     color: #000;
   }
 </style>
-
-<div id="footer">
-  <div class="branding">
-    MADE WITH
-    <i class="fas fa-heart" />
-    <a href="http://bit.ly/38E1FCO">SVELTE RESUME</a>
-  </div>
-</div>

@@ -3,6 +3,12 @@
   export let details;
 </script>
 
+<div id="skills-section">
+  {#each details as skill}
+    <Skill {skill} />
+  {/each}
+</div>
+
 <style>
   #skills-section {
     display: flex;
@@ -11,9 +17,3 @@
     margin: 0 -5px;
   }
 </style>
-
-<div id="skills-section">
-  {#each details as skill}
-    <Skill {skill} />
-  {/each}
-</div>

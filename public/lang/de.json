@@ -1,0 +1,54 @@
+{
+  "header": "Vielseitiger und pragmatischer Full-Stack-Entwickler mit Schwerpunkt auf .NET-Backend-Technologien. Schneller Lerner mit Erfahrung in einer Vielzahl von Branchen. Begeistert von DevOps und Softwarequalität.",
+  "side": {
+    "about": {
+      "title": "Über mich",
+      "general_title": "Allgemein",
+      "birthday": "17. Mai 1993",
+      "language_de": "DE: Muttersprache",
+      "language_en": "EN: Fliessend",
+      "language_frit": "FR/IT: Grundkenntnisse",
+      "location": "Tann, ZH",
+      "find_title": "Onlinepräsenz"
+    },
+    "skills": {
+      "title": "Stärken",
+      "architecture": "Architektur"
+    },
+    "cv": {
+      "title": "Dieser Lebenslauf",
+      "description": "Liest Du diesen Lebenslauf auf Papier oder PDF? Hol Dir die neueste Version online. Vollständig druckbar. Erstellt mit Svelte."
+    }
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "zuehlke": {
+      "title": "Expert Software Engineer",
+      "dates": "08/2018 — jetzt",
+      "description": "Software-Exzellenz für verschiedene Kunden",
+      "details1": "Führung eines Entwicklerteams in einem SAFe-Projektsetup in der Bankenbranche (C#, Angular, MSSQL, Jenkins, Octopus)",
+      "details2": "Architekturleitung und Entwicklung einer Webanwendung in einem kleinen Zwei-Personen-Projekt für eine Krankenversicherung (Angular, GraphQL, Azure DevOps, Anforderungsmanagement)",
+      "details3": "Arbeit an einer Mensch-Maschine-Schnittstellenanwendung(HMI) in der Maschinenindustrie (C#, WPF, PostgreSQL, TeamCity)",
+      "details4": "Entwicklung einer wichtigen internen Plattform für eine Bank (C#, Angular, Cypress, MSSQL, TeamCity, Octopus)"
+    },
+    "baumann": {
+      "title": "IT-Infrastructure Engineer",
+      "description": "Ausbildung, Infrastrukturprojekte und interner Support",
+      "details1": "Mehrere Einsätze in verschiedenen europäischen Ländern",
+      "details2": "Teilnahme an und Leitung von kleinen und mittelgrossen Infrastrukturprojekten wie Windows Server-Migrationen, VoIP und Datensicherung.",
+      "details3": "Unterstützung im internen Service Desk.",
+      "details4": "Ausbildung in Informatik mit Schwerpunkt Systemtechnik. Abschluss mit 5,2."
+    }
+  },
+  "education": {
+    "title": "Bildung",
+    "fh": {
+      "title": "Bachelor Informatik",
+      "description": "Bachelorarbeit: \"Stücklistenmanagement für Maschinen\" - Note 6,0. Spezialisierung auf \"Softwareentwicklung\" und \"Anwendungsdesign\"."
+    },
+    "bm2": {
+      "title": "Technische Berufsmaturität (BM2)",
+      "description": "Im Teilzeitpensum nach der Lehre. Abschluss mit einer Note von 4,9."
+    }
+  }
+}

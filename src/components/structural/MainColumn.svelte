@@ -3,6 +3,12 @@
   export let sections;
 </script>
 
+<div id="main-column">
+  {#each sections as { label, details, type }}
+    <Section {label} {details} {type} />
+  {/each}
+</div>
+
 <style>
   #main-column {
     width: var(--main-column-width);
@@ -11,9 +17,3 @@
     flex-direction: column;
   }
 </style>
-
-<div id="main-column">
-  {#each sections as { label, details, type }}
-    <Section {label} {details} {type} />
-  {/each}
-</div>

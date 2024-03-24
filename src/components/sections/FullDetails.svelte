@@ -12,6 +12,7 @@
       {dates}
       {location}
       {description}
-      {list} />
+      {list}
+    />
   {/each}
 </div>

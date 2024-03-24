@@ -1,8 +1,20 @@
 <script>
+  import { _ } from "../../services/i18n";
   export let details;
 
   $: ({ qrCode, url, description, version } = details[0]);
 </script>
+
+<div id="contact-section">
+  <div class="bottom">{$_(description)}</div>
+  <div class="qrcode">
+    <img src={qrCode} alt="qrcode" />
+  </div>
+  <div class="link">
+    <a href={url}>{url}</a>
+    <span>{version}</span>
+  </div>
+</div>
 
 <style>
   #contact-section {
@@ -19,14 +31,3 @@
     justify-content: space-between;
   }
 </style>
-
-<div id="contact-section">
-  <div class="bottom">{description}</div>
-  <div class="qrcode">
-    <img src={qrCode} alt="qrcode" />
-  </div>
-  <div class="link">
-    <a href={url}>{url}</a>
-    <span>{version}</span>
-  </div>
-</div>
