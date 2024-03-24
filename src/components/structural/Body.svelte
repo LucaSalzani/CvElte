@@ -1,11 +1,12 @@
 <script>
+    import { _ } from '../../services/i18n';
   import SideColumn from "./SideColumn.svelte";
   import MainColumn from "./MainColumn.svelte";
 
   export const sideColumn = [
     {
       type: "contact",
-      label: "About me",
+      label: $_('side.about.title'),
       details: [
         {
           subcategory: "General",
