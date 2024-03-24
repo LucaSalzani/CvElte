@@ -1,60 +1,60 @@
 <script>
-    import { _ } from '../../services/i18n';
+  import { _ } from "../../services/i18n";
   import SideColumn from "./SideColumn.svelte";
   import MainColumn from "./MainColumn.svelte";
 
   export const sideColumn = [
     {
       type: "contact",
-      label: $_('side.about.title'),
+      label: "side.about.title",
       details: [
         {
-          subcategory: "General",
+          subcategory: "side.about.general_title",
           contactDetails: [
             {
-              text: "17. May 1993"
+              text: "side.about.birthday",
             },
             {
-              text: "DE: Mother tongue",
-              icon: "language"
+              text: "side.about.language_de",
+              icon: "language",
             },
             {
-              text: "EN: Fluent",
-              icon: "language"
+              text: "side.about.language_en",
+              icon: "language",
             },
             {
-              text: "FR/IT: Rudimentary",
-              icon: "language"
+              text: "side.about.language_frit",
+              icon: "language",
             },
             {
-              text: "Tann, ZH",
-              icon: "location"
-            }
-          ]
+              text: "side.about.location",
+              icon: "location",
+            },
+          ],
         },
         {
-          subcategory: "Find me online",
+          subcategory: "side.about.find_title",
           contactDetails: [
             {
               isLink: true,
               type: "email",
               text: "luca.salzani@gmail.com",
-              icon: "email"
+              icon: "email",
             },
             {
               isLink: true,
               type: "web",
               url: "https://www.linkedin.com/in/luca-salzani-21351394/",
               text: "linkedin.com/in/luca-salzani-21351394/",
-              icon: "linkedin"
-            }
-          ]
-        }
-      ]
+              icon: "linkedin",
+            },
+          ],
+        },
+      ],
     },
     {
       type: "skills",
-      label: "Strengths",
+      label: "side.skills.title",
       details: [
         "C#",
         "Angular",
@@ -67,80 +67,83 @@
         "HTML",
         "CSS",
         "Git",
-        "Architecture",
-        "PowerShell"
-      ]
+        "side.skills.architecture",
+        "PowerShell",
+      ],
     },
     {
       type: "aboutcv",
-      label: "About this CV",
+      label: "side.cv.title",
       details: [
         {
           qrCode: "qr-code.png",
           url: "https://cv-elte.vercel.app/",
-          description:
-            "Reading this CV on paper? Get the latest version online. Fully printable. Built with Svelte.",
-          version: "v1.0"
-        }
-      ]
-    }
+          description: "side.cv.description",
+          version: "v1.0",
+        },
+      ],
+    },
   ];
   export const mainColumn = [
     {
       type: "full-details",
-      label: "Experience",
+      label: "experience.title",
       details: [
         {
-          title: "Expert Software Engineer",
+          title: "experience.zuehlke.title",
           subtitle: "Zühlke Engineering AG",
-          dates: `08/2018 — ongoing`,
+          dates: "experience.zuehlke.dates",
           location: "Schlieren, ZH",
-          description: "Bringing Software excellence to clients",
+          description: "experience.zuehlke.description",
           list: [
-            "Lead a developer team in a SAFe project setup in the banking industry (C#, Angular, MSSQL, Jenkins, Octopus)",
-            "Architecural lead and development of a webapp in a small two-people project for a health insurance company (Angular, GraphQL, Azure DevOps, Requirement Engineering)",
-            "Worked on a Human-Machine-Interface application in the machine industry (C#, WPF, PostgreSQL, TeamCity)",
-            "Developed a crucial internal platform for a bank (C#, Angular, Cypress, MSSQL, TeamCity, Octopus)"
-          ]
+            "experience.zuehlke.details1",
+            "experience.zuehlke.details2",
+            "experience.zuehlke.details3",
+            "experience.zuehlke.details4",
+          ],
         },
         {
-          title: "IT Infrastructure Engineer",
+          title: "experience.baumann.title",
           subtitle: "Baumann Federn AG",
           dates: "08/2008 — 08/2015",
           location: "Ermenswil, SG",
-          description: "Apprenticeship and infrastructure projects",
+          description: "experience.baumann.description",
           list: [
-            "Several assignments in different european countries",
-            "Took part and lead small and medium sized infrastructure projects like Windows Server migrations, VoIP and data backup.",
-            "Apprenticeship in computer science with emphasis on system technology. Graduated with 5.2."
-          ]
-        }
-      ]
+            "experience.baumann.details1",
+            "experience.baumann.details2",
+            "experience.baumann.details3",
+            "experience.baumann.details4",
+          ],
+        },
+      ],
     },
     {
       type: "full-details",
-      label: "Education",
+      label: "education.title",
       details: [
         {
-          title: "Bachelor Computer Science",
+          title: "education.fh.title",
           subtitle: "Ostschweizer Fachhochschule",
           dates: "09/2015 — 08/2018",
           location: "Rapperswil, SG",
-          description:
-            'Bachelor thesis: "Stücklistenmanagement für Maschinen" - mark 6.0. Specialization "Software Engineering" and "Application Design".'
+          description: "education.fh.description",
         },
         {
-          title: "Technical Vocational (BM2)",
+          title: "education.bm2.title",
           subtitle: "Berufsbuildungszentrum Uster",
           dates: "08/2012 — 06/2014",
           location: "Uster, ZH",
-          description:
-            "Part time after apprenticeship. Graduated with a mark of 4.9"
-        }
-      ]
-    }
+          description: "education.bm2.description",
+        },
+      ],
+    },
   ];
 </script>
+
+<div class="main-body">
+  <MainColumn sections={mainColumn} />
+  <SideColumn sections={sideColumn} />
+</div>
 
 <style>
   div {
@@ -150,8 +153,3 @@
     margin: 0 var(--horizontal-offset);
   }
 </style>
-
-<div class="main-body">
-  <MainColumn sections={mainColumn} />
-  <SideColumn sections={sideColumn} />
-</div>

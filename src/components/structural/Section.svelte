@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "../../services/i18n";
   import Contact from "../sections/Contact.svelte";
   import Skills from "../sections/Skills.svelte";
   import FullDetails from "../sections/FullDetails.svelte";
@@ -10,17 +11,17 @@
 </script>
 
 <div class="section">
-  <h2 class="section-label">{label}</h2>
+  <h2 class="section-label">{$_(label)}</h2>
   <hr class="section-underline" />
-  {#if type === 'simple-details'}
-    <SimpleDetails {label} {details} />
-  {:else if type === 'full-details'}
-    <FullDetails {label} {details} />
-  {:else if type === 'skills'}
-    <Skills {label} {details} />
-  {:else if type === 'contact'}
-    <Contact {label} {details} />
-  {:else if type === 'aboutcv'}
-    <AboutCv {label} {details} />
+  {#if type === "simple-details"}
+    <SimpleDetails {details} />
+  {:else if type === "full-details"}
+    <FullDetails {details} />
+  {:else if type === "skills"}
+    <Skills {details} />
+  {:else if type === "contact"}
+    <Contact {details} />
+  {:else if type === "aboutcv"}
+    <AboutCv {details} />
   {/if}
 </div>

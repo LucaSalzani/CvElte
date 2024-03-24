@@ -1,7 +1,23 @@
 <script>
+  import { _ } from "../../services/i18n";
   import ContactItem from "../items/ContactItem.svelte";
   export let details;
 </script>
+
+<div id="contact-section">
+  {#each details as { subcategory, contactDetails }}
+    <div class="contact-subsection">
+      {#if subcategory}
+        <div class="contact-subhead">{$_(subcategory)}</div>
+      {/if}
+      <div class="contact-items">
+        {#each contactDetails as detail}
+          <ContactItem {detail} />
+        {/each}
+      </div>
+    </div>
+  {/each}
+</div>
 
 <style>
   #contact-section {
@@ -24,18 +40,3 @@
     line-height: 1.7em;
   }
 </style>
-
-<div id="contact-section">
-  {#each details as { subcategory, contactDetails }}
-    <div class="contact-subsection">
-      {#if subcategory}
-        <div class="contact-subhead">{subcategory}</div>
-      {/if}
-      <div class="contact-items">
-        {#each contactDetails as detail}
-          <ContactItem {detail} />
-        {/each}
-      </div>
-    </div>
-  {/each}
-</div>

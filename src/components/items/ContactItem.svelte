@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "../../services/i18n";
   export let detail;
   let { isLink, type, text, url, icon } = detail;
   let defaultIcon = "fa fa-star";
@@ -9,10 +10,23 @@
     github: "fab fa-github",
     linkedin: "fab fa-linkedin-in",
     blog: "fa fa-pencil-alt",
-    language: "fa fa-globe"
+    language: "fa fa-globe",
   };
   let linkIcon = fontAwesomeIconMap[icon] || defaultIcon;
 </script>
+
+<div class="contact-item">
+  <i class={linkIcon} />
+  {#if isLink}
+    {#if type === "email"}
+      <a href="mailto:{text}">{text}</a>
+    {:else if type === "phone"}
+      <a href="tel:{text}">{text}</a>
+    {:else}
+      <a href="http://{url}">{$_(text)}</a>
+    {/if}
+  {:else}{$_(text)}{/if}
+</div>
 
 <style>
   .contact-item i {
@@ -30,18 +44,3 @@
     margin-top: 5px;
   }
 </style>
-
-<div class="contact-item">
-  <i class={linkIcon} />
-  {#if isLink}
-    {#if type === 'email'}
-      <a href="mailto:{text}">{text}</a>
-    {:else if type === 'phone'}
-      <a href="tel:{text}">{text}</a>
-    {:else if url}
-      <a href="http://{url}">{text}</a>
-    {:else}
-      <a href="http://{text}">{text}</a>
-    {/if}
-  {:else}{text}{/if}
-</div>

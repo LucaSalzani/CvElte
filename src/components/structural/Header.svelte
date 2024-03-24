@@ -1,10 +1,22 @@
 <script>
-  import { _ } from '../../services/i18n';
+  import { _ } from "../../services/i18n";
   export const name = "Luca Salzani";
   const summaryLines = [
-    "Versatile and pragmatic full stack developer with focus on .NET backend technologies. Fast learner with experience in a wide range of industries. Enthusiastic about DevOps and Quality Assurance."
+    "Versatile and pragmatic full stack developer with focus on .NET backend technologies. Fast learner with experience in a wide range of industries. Enthusiastic about DevOps and Quality Assurance.",
   ];
 </script>
+
+<div id="header">
+  <h1 id="my-name">{name}</h1>
+  <div class="row">
+    <div class="summary">
+      {$_("header")}
+    </div>
+    <div class="profile">
+      <img class="profile-image" src="profile.jpg" alt="Luca Profile" />
+    </div>
+  </div>
+</div>
 
 <style>
   #header {
@@ -44,15 +56,3 @@
     width: 3.5cm;
   }
 </style>
-
-<div id="header">
-  <h1 id="my-name">{name}</h1>
-  <div class="row">
-    <div class="summary">
-      {$_('header')}
-    </div>
-    <div class="profile">
-      <img class="profile-image" src="profile.jpg" alt="Luca Profile Picture" />
-    </div>
-  </div>
-</div>
