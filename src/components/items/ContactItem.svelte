@@ -22,6 +22,8 @@
       <a href="mailto:{text}">{text}</a>
     {:else if type === "phone"}
       <a href="tel:{text}">{text}</a>
+    {:else if type === "web"}
+    <a href="{url}">{$_(text)}</a>
     {:else}
       <a href="http://{url}">{$_(text)}</a>
     {/if}
