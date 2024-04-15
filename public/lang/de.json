@@ -27,9 +27,9 @@
       "dates": "08/2018 — jetzt",
       "description": "Software-Exzellenz für verschiedene Kunden",
       "details1": "Führung eines Entwicklerteams in einem SAFe-Projektsetup in der Bankenbranche (C#, Angular, MSSQL, Jenkins, Octopus)",
-      "details2": "Architekturleitung und Entwicklung einer Webanwendung in einem kleinen Zwei-Personen-Projekt für eine Krankenversicherung (Angular, GraphQL, Azure DevOps, Anforderungsmanagement)",
+      "details2": "Architekturleitung und Entwicklung einer Webanwendung in einem Zwei-Entwickler-Projekt für eine Krankenversicherung (Angular, GraphQL, Azure DevOps, Anforderungsmanagement)",
       "details3": "Arbeit an einer Mensch-Maschine-Schnittstellenanwendung(HMI) in der Maschinenindustrie (C#, WPF, PostgreSQL, TeamCity)",
-      "details4": "Entwicklung einer wichtigen internen Plattform für eine Bank (C#, Angular, Cypress, MSSQL, TeamCity, Octopus)"
+      "details4": "Mitentwicklung einer wichtigen internen Plattform für eine Bank (C#, Angular, Cypress, MSSQL, TeamCity, Octopus)"
     },
     "baumann": {
       "title": "IT-Infrastructure Engineer",
