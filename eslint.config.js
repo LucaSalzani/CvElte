@@ -1,7 +1,10 @@
-import eslintPluginSvelte from 'eslint-plugin-svelte';
+import eslintPluginSvelte from "eslint-plugin-svelte";
+import js from "@eslint/js";
+
 export default [
-  ...eslintPluginSvelte.configs['flat/prettier'],
+  js.configs.recommended,
+  ...eslintPluginSvelte.configs["flat/prettier"],
   {
-    ignores: ["public/*"]
-  }
+    ignores: ["public/*"],
+  },
 ];
