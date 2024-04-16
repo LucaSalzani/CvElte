@@ -146,10 +146,16 @@
 </div>
 
 <style>
-  div {
+  .main-body {
     display: flex;
     justify-content: space-between;
     flex-direction: var(--column-order);
     margin: 0 var(--horizontal-offset);
   }
+
+  @media screen and (max-width: 620px) {
+    .main-body {
+      flex-direction: column;
+  }
+}
 </style>

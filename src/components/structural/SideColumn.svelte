@@ -18,4 +18,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 620px) {
+    #side-column {
+      width: unset;
+      padding-bottom: var(--horizontal-space-between-columns);
+  }
+}
 </style>

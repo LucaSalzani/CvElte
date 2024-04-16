@@ -16,4 +16,9 @@
     display: flex;
     flex-direction: column;
   }
+  @media screen and (max-width: 620px) {
+    #main-column {
+      width: unset;
+  }
+}
 </style>
