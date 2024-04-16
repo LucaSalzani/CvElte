@@ -7,9 +7,9 @@
 
 <div id="contact-section">
   <div class="bottom">{$_(description)}</div>
-  <!-- <div class="qrcode">
+  <div class="qrcode">
     <img src={qrCode} alt="qrcode" />
-  </div> -->
+  </div>
   <div class="link">
     <a href={url}>{url}</a>
     <span>{version}</span>
@@ -21,9 +21,9 @@
     margin-top: 14px; /* align baseline with adjacent component text */
   }
 
-  /* .qrcode img {
+  .qrcode img {
     max-width: 3cm;
-  } */
+  }
 
   .link {
     font-size: 0.9em;

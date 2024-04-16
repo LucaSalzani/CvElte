@@ -77,9 +77,9 @@
       details: [
         {
           qrCode: "qr-code.png",
-          url: "https://cv-elte.vercel.app/",
+          url: "https://cv.salzani.work/",
           description: "side.cv.description",
-          version: "v1.0",
+          version: "v1.1",
         },
       ],
     },
