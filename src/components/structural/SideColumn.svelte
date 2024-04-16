@@ -23,6 +23,6 @@
     #side-column {
       width: unset;
       padding-bottom: var(--horizontal-space-between-columns);
+    }
   }
-}
 </style>

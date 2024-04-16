@@ -23,19 +23,19 @@
 
 <style>
   main {
-  width: 21cm;
-  height: 29.5cm;
-  padding: 2.3rem 3.75rem;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-}
+    width: 21cm;
+    height: 29.5cm;
+    padding: 2.3rem 3.75rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
 
-    @media screen and (max-width: 620px) {
+  @media screen and (max-width: 620px) {
     main {
       padding: 0.5rem 0.8rem;
+    }
   }
-}
 </style>

@@ -156,6 +156,6 @@
   @media screen and (max-width: 620px) {
     .main-body {
       flex-direction: column;
+    }
   }
-}
 </style>

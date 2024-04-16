@@ -19,6 +19,6 @@
   @media screen and (max-width: 620px) {
     #main-column {
       width: unset;
+    }
   }
-}
 </style>

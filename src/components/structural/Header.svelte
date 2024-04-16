@@ -57,15 +57,15 @@
     .row {
       flex-direction: column-reverse;
       align-items: center;
-  }
+    }
 
-  .summary {
-    max-width: 100%;
-    text-align: center;
-  }
+    .summary {
+      max-width: 100%;
+      text-align: center;
+    }
 
-  .profile-image {
-    width: 60%;
+    .profile-image {
+      width: 60%;
+    }
   }
-}
 </style>
