@@ -52,4 +52,20 @@
   .profile-image {
     width: 3.5cm;
   }
+
+  @media screen and (max-width: 620px) {
+    .row {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  .summary {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 60%;
+  }
+}
 </style>

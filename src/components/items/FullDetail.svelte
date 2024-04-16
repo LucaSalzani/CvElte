@@ -62,4 +62,16 @@
     font-size: 0.9em;
     color: #000;
   }
+
+  @media screen and (max-width: 620px) {
+    .top {
+      flex-direction: column;
+  }
+
+  .top-right {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
 </style>
