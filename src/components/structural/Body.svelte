@@ -1,5 +1,4 @@
 <script>
-  import { _ } from "../../services/i18n";
   import SideColumn from "./SideColumn.svelte";
   import MainColumn from "./MainColumn.svelte";
 
